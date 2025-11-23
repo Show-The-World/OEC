@@ -122,7 +122,13 @@ header .logoWrapper img{
 }
 .subHero .container{
     padding: calc(var(--lineSpacing) * 4) var(--gutterSpacing);
-    border-right: solid 10px var(--color-orange1);
+    border-right: 10px solid transparent;
+    border-image: linear-gradient(
+        to bottom,
+        var(--color-gold3),
+        var(--color-gold1),
+        var(--color-gold2)
+    ) 1;
     width: fit-content;
 }
 .subHero > .container * {
@@ -152,7 +158,13 @@ header .logoWrapper img{
     .subHero .container{
         width: 100%;
         border-right: 0;
-        border-bottom: solid 10px var(--color-green1);
+        border-bottom: 10px solid transparent;
+        border-image: linear-gradient(
+            to right,
+            var(--color-gold3),
+            var(--color-gold1),
+            var(--color-gold2)
+        ) 1;
     }
     .subHero h1{
         text-align: center;
@@ -175,7 +187,7 @@ header .logoWrapper img{
 }
 .subsubHero .container::before{
     content: '';
-    background-color: var(--color-orange1);
+    background-color: var(--color-gold2);
     width: calc(var(--gutterSpacing) * 0.15);
     position: absolute;
     left: 0;
@@ -274,7 +286,12 @@ header .logoWrapper img{
 }
 .contactForm .separator{
     height: 100%;
-    background-color: var(--color-orange1);
+    background-image: linear-gradient(
+        to bottom,
+        var(--color-gold3),
+        var(--color-gold1),
+        var(--color-gold2)
+    );
     width: 3px;
 }
 .contactForm form > *:not(:last-child){
@@ -335,6 +352,12 @@ header .logoWrapper img{
     .contactForm .separator{
         height: 2px;
         width: 100%;
+        background-image: linear-gradient(
+            to right,
+            var(--color-gold3),
+            var(--color-gold1),
+            var(--color-gold2)
+        );
     }
 }
 
@@ -701,9 +724,15 @@ header .logoWrapper img{
 .--layout-2BlockSplit .container{
     padding: calc(var(--lineSpacing) *2);
 
-    border: var(--color-orange2) solid 10px;
+    border: 10px solid transparent;
     border-top: none;
     border-left: none;
+    border-image: linear-gradient(
+        135deg,
+        var(--color-gold3),
+        var(--color-gold1),
+        var(--color-gold2)
+    ) 1;
 }
 .--layout-2BlockSplit .container > *:not(:last-child){
     margin-bottom: 0.5em;
@@ -737,7 +766,7 @@ header .logoWrapper img{
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: var(--color-orange1);
+    background-color: var(--color-gold2);
     height: 7px;
     z-index: 100;
     transition-duration: 0.2s;
@@ -806,7 +835,7 @@ header .logoWrapper img{
     margin-bottom: var(--lineSpacing);
 }
 .--card-2 .separator::before, .--card-2 .separator::after{
-    background-color: var(--color-green1);
+    background-color: var(--color-gold2);
     position: absolute;
     height: 2px;
     content: '';

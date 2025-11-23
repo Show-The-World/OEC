@@ -28,9 +28,9 @@
     --color-dark4: #1e1e1e;
     --color-dark2: #313131;
     --color-dark3: #535353;
-    --color-green1: #77D875;
-    --color-orange1:#ff9650;
-    --color-orange2:#FBB06C;
+    --color-gold1: #C9A227;
+    --color-gold2:#F3D976;
+    --color-gold3:#99771A;
 }
 
 
@@ -184,7 +184,7 @@ p, .p, p *, .p *, li{
 }
 
 .--card-3 > *:first-child{
-    color: var(--color-green1);
+    color: var(--color-gold1);
     font-size: calc((24 /16 * 1rem) + ((62 - 24) * ((100vw - 320px) / (1920 - 320))));
     font-weight: 600;
 }
@@ -245,10 +245,10 @@ p, .p, p *, .p *, li{
     bottom: 0;
     width: 30%;
     content: '';
-    background-color: var(--color-orange1);
+    background-color: var(--color-gold2);
 
     opacity: 1;
-    background-image: radial-gradient(rgb(27, 21, 21) 1.75px, var(--color-green1) 1.75px);
+    background-image: radial-gradient(rgb(27, 21, 21) 1.75px, var(--color-gold1) 1.75px);
     background-size: 35px 35px;
 } */
 
@@ -322,18 +322,18 @@ a, button{
 
 .--btn-submit{
     padding: 0.50em 0.75em;
-    border: 0.075em solid var(--color-green1);
-    color: var(--color-green1);
+    border: 0.075em solid var(--color-gold1);
+    color: var(--color-gold1);
     width: 100%;
     text-align: left;
 }
 .--btn-submit:hover{
-    background-color: var(--color-green1);
+    background-color: var(--color-gold1);
     color: var(--color-dark4);
 }
 
 a.--typo-cell:hover *, a.--typo-cell2:hover *{
-    color: var(--color-orange1);
+    color: var(--color-gold2);
 }
 
 .--btn-learnMore1{
@@ -354,15 +354,25 @@ a.--typo-cell:hover *, a.--typo-cell2:hover *{
 }
 
 .--btn-learnMore1 .arrowLine{
-    background-color: var(--color-green1);
+    background-image: linear-gradient(
+        90deg,
+        var(--color-gold3),
+        var(--color-gold1),
+        var(--color-gold2)
+    );
     height: var(--lineThickness);
     width: calc(100% + var(--sideOffset));
     margin-top: 0.2em;
     clip-path: polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,0 100%);
 }
+
 .--btn-learnMore1 .arrowHead{
     width: calc(var(--lineThickness) * 1.9);
-    background-color: var(--color-green1);
+    background-image: linear-gradient(
+        135deg,
+        var(--color-gold1),
+        var(--color-gold2)
+    );
     position: absolute;
     right: 0;
     top: 0.8em;
@@ -371,15 +381,24 @@ a.--typo-cell:hover *, a.--typo-cell2:hover *{
     transform-origin: bottom;
 }
 
-
-
 .--btn-CTA2{
-    background-color: var(--color-orange1);
+    background-image: linear-gradient(
+        135deg,
+        var(--color-gold3),
+        var(--color-gold1),
+        var(--color-gold2)
+    );
     padding: 0.6em 1.2em;
+    color: var(--color-dark4);
 }
 
 .--btn-CTA2:hover{
-    background-color: var(--color-orange2);
+    background-image: linear-gradient(
+        135deg,
+        var(--color-dark1),
+        var(--color-dark4)
+    );
+    color: var(--color-light1);
 }
 
 
