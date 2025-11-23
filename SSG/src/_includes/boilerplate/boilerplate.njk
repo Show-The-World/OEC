@@ -23,8 +23,6 @@
     {% block links %}
     {% endblock %}
 
-
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 
 
@@ -44,19 +42,5 @@
         {% include "layouts/footer.njk" ignore missing%}
     {% endif %}
 
-
-
-    {# script for netlify/decap-cms #}
-    <script>
-        if (window.netlifyIdentity) {
-            window.netlifyIdentity.on("init", user => {
-            if (!user) {
-                window.netlifyIdentity.on("login", () => {
-                document.location.href = "/admin/";
-                });
-            }
-            });
-        }
-    </script>
 </body>
 </html>
